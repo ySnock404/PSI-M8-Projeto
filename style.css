@@ -1,0 +1,395 @@
+body {
+  font-family: sans-serif;
+  background-color: #3661ac;
+  font-family: "Iceland", cursive;
+}
+
+.searchBar {
+  padding: 20px ;
+  text-align: center;
+  background-color: #e8332a;
+  border-radius: 8px 8px 0 0;
+}
+
+.TituloF {
+  padding: 1px ;
+  text-align: center;
+  background-color: #e8332a;
+  border-radius: 8px 8px 0 0;
+}
+
+label {
+  font-size: 1.3rem;
+}
+
+input[type=text] {
+  height: 40px;
+  padding-left: 10px;
+  font-family: "Iceland", cursive;
+}
+
+#pokeOutput {
+  padding: 20px 50px 30px;
+}
+
+#pokeImage {
+  display: block;
+  margin: 20px 0;
+  width: 180px;
+  position: relative;
+  left: -45px;
+}
+
+.base-title {
+  font-size: 1.3rem;
+  font-weight: 700;
+}
+
+.stat {
+  font-weight: 700;
+}
+
+.poke-name-num {
+  display: inline-block;
+  float: left;
+  margin-left: 5px;
+}
+
+.size {
+  display: inline-block;
+  float: right;
+  margin-right: 5px;
+}
+
+.name {
+  display: block;
+  text-transform: capitalize;
+  font-size: 1.6rem;
+}
+
+.poke-info {
+  display: inline-block;
+  margin-right: 2px;
+}
+
+.container {
+  width: 450px;
+  margin-top: 30px;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: #fff;
+  color: #000;
+  border-radius: 15px;
+  -webkit-box-shadow: 10px 10px 0px 0px rgba(0, 0, 0, 0.75);
+          box-shadow: 10px 10px 0px 0px rgba(0, 0, 0, 0.75);
+}
+
+.container-index {
+  width: 550px;
+  margin-top: 30px;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: #fff;
+  color: #000;
+  border-radius: 15px;
+  -webkit-box-shadow: 10px 10px 0px 0px rgba(0, 0, 0, 0.75);
+          box-shadow: 10px 10px 0px 0px rgba(0, 0, 0, 0.75);
+}
+
+.container-janelas {
+  width: 1000px;
+  margin-top: 30px;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: #fff;
+  color: #000;
+  border-radius: 15px;
+  -webkit-box-shadow: 10px 10px 0px 0px rgba(0, 0, 0, 0.75);
+          box-shadow: 10px 10px 0px 0px rgba(0, 0, 0, 0.75);
+}
+
+
+.Voltar-Index {
+  text-align: right;
+  color: white;
+}
+
+
+.image-container {
+  height: 300px;
+  background-color: #bfbfc9;
+  white-space: nowrap;
+  border: 1px solid #e8332a;
+  color: #fff;
+  font-size: 1.2rem;
+}
+
+.image-container-index {
+  height: 290px;
+  background-color: #bfbfc9;
+  white-space: nowrap;
+  border: 1px solid #e8332a;
+  color: #fff;
+  font-size: 1rem;
+}
+
+.image-container-janelas {
+  height: auto;
+  padding-right: 10px;
+  padding-left: 10px;
+  background-color: #bfbfc9;
+  white-space: nowrap;
+  border: 1px solid #e8332a;
+  color: #fff;
+  text-align: left;
+  font-size: 1rem;
+}
+
+button {
+  display: inline;
+  margin: 0;
+  background-color: #fff;
+  color: #e8332a;
+  border: 1px solid #e8332a;
+  position: relative;
+  left: 0px;
+  outline: none;
+  cursor: pointer;
+}
+
+button:hover {
+  border: 2px solid #e8332a;
+}
+
+button:active {
+  background-color: #f4f1f1;
+}
+
+.bigBtn {
+  height: 40px;
+  width: 120px;
+  font-weight: 700;
+  position: relative;
+  top: -2px;
+}
+
+.changeBtn {
+  height: 40px;
+  width: 54px;
+  font-size: 1.5rem;
+}
+
+table {
+  border-collapse: collapse;
+  width: 100%;
+  font-size: 1.2rem;
+}
+
+td,
+th {
+  border: 1px solid #e8332a;
+  text-align: left;
+  padding: 8px;
+}
+
+tr:nth-child(even) {
+  background-color: #e8332a;
+}
+
+.pokeType {
+  padding: 5px;
+  color: #fff;
+  border-radius: 5px;
+  text-transform: capitalize;
+  margin-left: 5px;
+  font-weight: 700;
+}
+
+.normal {
+  background-color: #a8a878;
+}
+
+.grass {
+  background-color: #78c850;
+}
+
+.ground {
+  background-color: #e0c068;
+}
+
+.fighting {
+  background-color: #c03028;
+}
+
+.rock {
+  background-color: #b8a038;
+}
+
+.steel {
+  background-color: #b8b8d0;
+}
+
+.fire {
+  background-color: #f08030;
+}
+
+.electric {
+  background-color: #f8d030;
+}
+
+.flying {
+  background-color: #a890f0;
+}
+
+.psychic {
+  background-color: #f85888;
+}
+
+.bug {
+  background-color: #a8b820;
+}
+
+.dragon {
+  background-color: #7038f8;
+}
+
+.water {
+  background-color: #6890f0;
+}
+
+.ice {
+  background-color: #98d8d8;
+}
+
+.poison {
+  background-color: #a040a0;
+}
+
+.dark {
+  background-color: #705848;
+}
+
+.ghost {
+  background-color: #705898;
+}
+
+.fairy {
+  background-color: #ffaec9;
+}
+
+footer {
+  background-color: #e8332a;
+  text-align: center;
+  position: fixed;
+  left: 0px;
+  bottom: 0px;
+  height: 50px;
+  width: 100%;
+  color: #fff;
+}
+
+footer a {
+  color: #fff;
+  text-decoration: none;
+}
+
+footer a:hover {
+  color: #ffcb08;
+}
+
+
+/*# sourceMappingURL=style.css.map */
+
+.wrapper {
+  display: grid;
+  grid-template-columns: 150px 150px 150px;
+  grid-template-rows: 140px;
+  margin-left: 15px;
+}
+
+.button-1 {
+  margin-top: 10px;
+  margin-left: 10px;
+  margin-right: auto;
+  height: 100px;
+  width: 100px;
+  background-color: #fff;
+  color: #000;
+  border-radius: 10%;
+  -webkit-box-shadow: 2px 2px 0px 0px rgba(0, 0, 0, 0.75);
+  box-shadow: 2px 2px 0px 0px rgba(0, 0, 0, 0.75);
+}
+
+.button-2 {
+  margin-top: 10px;
+  margin-left: 10px;
+  margin-right: auto;
+  height: 100px;
+  width: 100px;
+  background-color: #fff;
+  color: #000;
+  border-radius: 10%;
+  -webkit-box-shadow: 2px 2px 0px 0px rgba(0, 0, 0, 0.75);
+  box-shadow: 2px 2px 0px 0px rgba(0, 0, 0, 0.75);
+}
+
+.button-3 {
+  margin-top: 10px;
+  margin-left: 10px;
+  margin-right: auto;
+  height: 100px;
+  width: 100px;
+  background-color: #fff;
+  color: #000;
+  border-radius: 10%;
+  -webkit-box-shadow: 2px 2px 0px 0px rgba(0, 0, 0, 0.75);
+  box-shadow: 2px 2px 0px 0px rgba(0, 0, 0, 0.75);
+}
+
+.button-4 {
+  margin-top: 10px;
+  margin-left: 10px;
+  margin-right: auto;
+  height: 100px;
+  width: 100px;
+  background-color: #fff;
+  color: #000;
+  border-radius: 10%;
+  -webkit-box-shadow: 2px 2px 0px 0px rgba(0, 0, 0, 0.75);
+  box-shadow: 2px 2px 0px 0px rgba(0, 0, 0, 0.75);
+}
+
+.button-5 {
+  margin-top: 10px;
+  margin-left: 10px;
+  margin-right: auto;
+  height: 100px;
+  width: 100px;
+  background-color: #fff;
+  color: #000;
+  border-radius: 10%;
+  -webkit-box-shadow: 2px 2px 0px 0px rgba(0, 0, 0, 0.75);
+  box-shadow: 2px 2px 0px 0px rgba(0, 0, 0, 0.75);
+}
+.button-6 {
+  margin-top: 10px;
+  margin-left: 10px;
+  margin-right: auto;
+  height: 100px;
+  width: 100px;
+  background-color: #fff;
+  color: #000;
+  border-radius: 10%;
+  -webkit-box-shadow: 2px 2px 0px 0px rgba(0, 0, 0, 0.75);
+  box-shadow: 2px 2px 0px 0px rgba(0, 0, 0, 0.75);
+}
+
+.cont:hover {
+
+  color: #e72319;
+}
+
+.cont{
+  color: #ffffff;
+  text-shadow: 1px 1px 1px #000;
+}

@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Projeto de Programação</title>
+    <link rel="shortcut icon" type="image/png" href="img/favicon-16x16.png">
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js" type="text/javascript"></script>
+    <script type="text/javascript" src="script.js"></script>
+    <script src="https://use.fontawesome.com/fa4e67e080.js"></script>
+    <link href="https://fonts.googleapis.com/css?family=Iceland" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    </head>
+<body> 
+  <div class="Voltar-Index">
+    Voltar
+    <button style="color: #e8332a;" onclick="window.location.href='index.html'">
+      <i class="fa fa-caret-square-o-left" aria-hidden="true"></i>
+    </button>
+  </div>
+    <div class="container">
+        <div class="searchBar">      
+          <form>
+            <label for="pokemon">Procura um pokemon: </label>
+            <input type="text" name="pokemon" id="search" placeholder="Ex: Pikachu ou 25" style="color: #000000 ; font-size: 25px;">
+          </form>
+        </form>
+      </div>
+      
+        <div id="pokeOutput">
+          <div class="top-container">
+            <div class="image-container">
+              <button type="button" name="left" id="leftBtn" class="changeBtn"><i class="fa fa-caret-square-o-left" aria-hidden="true"></i></button><button type="button" name="default" id="defaultBtn" class="bigBtn">Padrão</button><button type="button" name="Shiny" id="shinyBtn" class="bigBtn">Brilhante</button><button type="button" name="left" id="rightBtn" class="changeBtn"><i class="fa fa-caret-square-o-right" aria-hidden="true"></i></button>
+      
+              <div class="poke-name-num">
+                <span class="name poke-info"></span>
+                <span class="idNum poke-info"></span>
+              </div>
+    
+      
+              <img src="" alt="" id="pokeImage">
+              <div id="types"></div>
+            </div>
+          </div>
+      
+          <div class="bottom-container">
+      
+            <table>
+              <tr>
+                <th>Base</th>
+                <th>Estatisticas</th>
+              </tr>
+              <tr>
+                <td>Vida:</td>
+                <td class="hp"></td>
+              </tr>
+              <tr>
+                <td>Ataque:</td>
+                <td class="attack"></td>
+              </tr>
+              <tr>
+                <td>Defesa:</td>
+                <td class="defense"></td>
+              </tr>
+              <tr>
+                <td>Ataque Especial:</td>
+                <td class="special-attack"></td>
+              </tr>
+              <tr>
+                <td>Defesa Especial:</td>
+                <td class="special-defense"></td>
+              </tr>
+              <tr>
+                <td>Velocidade:</td>
+                <td class="speed"></td>
+                <br>
+              </tr>
+            </table>
+          </div>
+        </div>
+        
+      </div>
+</body>
+</html>
