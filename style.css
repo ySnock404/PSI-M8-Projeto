@@ -109,7 +109,7 @@ input[type=text] {
 }
 
 .container-regras {
-  width: 700px;
+  width: 1200px;
   margin-top: 30px;
   margin-left: auto;
   margin-right: auto;
@@ -422,6 +422,31 @@ footer a:hover {
 
 .textofixe:hover {
   border: 2px solid black;
+  padding: 10px;
   font-size: 30px;
+  text-shadow: 1pt 1pt 1pt #000;
+}
+
+.textofixe-1:hover {
+  border: 2px solid black;
+  padding: 10px;
+  font-size: 45px;
+  text-shadow: 1pt 1pt 1pt #000;
+}
+
+.textofixe-2:hover {
+  border: 2px solid black;
+  padding: 10px;
+  text-shadow: 1pt 1pt 1pt #000;
+}
+
+.img-1:hover {
+width: 100%;
+}
+
+.textofixe-3:hover {
+  border: 2px solid black;
+  padding: 10px;
+  font-size: 35px;
   text-shadow: 1pt 1pt 1pt #000;
 }
